@@ -1,0 +1,39 @@
+.header
+  position: relative
+  z-index: 1
+
+  &__logo a
+    display: block
+    width: 88px
+    height: 25px
+    text-indent: 150%
+    overflow: hidden
+    white-space: nowrap
+    background-image: url('../app/images/logo.svg')
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    +breakpoint-up(medium)
+      width: 185px
+      height: 52px
+
+
+  nav
+    position: relative
+    padding: 
+      top: 1.5625rem
+      bottom: 1.5625rem
+    +breakpoint-up(medium)
+      padding: 
+        top: 4.5625rem
+        bottom: 4.5625rem
+
+  &__links
+    li
+      font-size: $font-mini
+      +breakpoint-up(medium)
+          font-size: $font-normal
+      &:not(:last-child)
+        margin-right: 1.5625rem
+        +breakpoint-up(medium)
+          margin-right: 3.625rem

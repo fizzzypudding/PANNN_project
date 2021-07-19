@@ -23,9 +23,13 @@
     "browserslist": "^4.16.6",
     "cssnano": "^5.0.6",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
     "gulp-pug": "^5.0.0",
-    "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
   }
 }

@@ -1,6 +1,6 @@
 const { src, dest, watch, series, parallel, task } = require('gulp');
 const pug = require('gulp-pug');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 // const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -27,7 +27,7 @@ function sassTask(){
 
 // JavaScript Task
 function jsTask(){
-  return src('app/scripts/scripts.js', { sourcemaps: true })
+  return src('app/scripts/script.js', { sourcemaps: true })
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
 }

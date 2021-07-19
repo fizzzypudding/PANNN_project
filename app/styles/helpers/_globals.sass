@@ -1,0 +1,23 @@
+html
+  font-size: 100%
+  box-sizing: border-box
+
+*,*::before,*::after
+  box-sizing: inherit
+
+body
+  margin: 0
+  padding: 0
+  line-height: 1.3
+  font-size: $font-sm
+  font-weight: $font-regular
+  color: $whiteColor
+  font-family: $font-openSans
+  background-color: $darkBlue_headerBg
+  overflow-x: hidden
+
+  +breakpoint-up(medium)
+    font-size: $font-normal
+
+  &.noscroll
+    overflow: hidden

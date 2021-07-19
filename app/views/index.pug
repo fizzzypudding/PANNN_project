@@ -1,7 +1,10 @@
 extend ./layout.pug
 
-block navbar
-  include ./layouts/navbar.pug
+block header
+  include ./layouts/header.pug
 
-block footer
-  include ./layouts/footer.pug
+//- block footer
+//-   include ./layouts/footer.pug
+
+block script
+  script(src="dist/script.js")
